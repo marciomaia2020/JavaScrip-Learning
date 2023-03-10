@@ -1,3 +1,12 @@
+
+
+//!ESTA É A ESTRUTURA DE UM OBJETO - SEM PAREMETROS
+/*
+const person = {}
+console.log(person);
+*/
+
+//!ESTA É A ESTRUTURA DE UM OBJETO - COM PAREMETROS E SUAS PROPRIEDADES
 const pessoas = {
     primeiroNome: "Marcio",
     segundoNome: "Fernando",
@@ -8,6 +17,7 @@ const pessoas = {
     escolaridade: ["2º grau completo", "Graduação em Analise de Sistemas", "Certificação Microsoft"],
     ativo: "true"
 }
+
 //! VIZUALIZANDO AS INFORMAÇÕES DO OBJETO CRIADO (pessoas)
 //! Note que exitem VARIÁVEIS COM O MESMO NOME
 /*
@@ -20,9 +30,12 @@ const rg = pessoas.rg;
 const escolaridade = pessoas.escolaridade[0];
 const ativo = pessoas.ativo;
 */
+
 //!PARA A QUANTIDADE DE CÓDIGO ACIMA FAÇA ou seja um *******************CONSTRUCTOR*******************
 const saida = { primeiroNome, segundoNome, ultimoNome, idade, cpf, rg, escolaridade, ativo } = pessoas;
-console.log(saida);
+console.log( 'O seu nome é ' + saida.primeiroNome + ' e vc tem ' + saida.idade +' anos');
+console.log('Sua escolaridade é, o ' + saida.escolaridade[0] + '.');
+
 
 //* APENAS PARA SAIR NA CONSOLE
 /*
