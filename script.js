@@ -33,7 +33,7 @@ const ativo = pessoas.ativo;
 
 //!PARA A QUANTIDADE DE CÓDIGO ACIMA FAÇA ou seja um *******************CONSTRUCTOR*******************
 const saida = { primeiroNome, segundoNome, ultimoNome, idade, cpf, rg, escolaridade, ativo } = pessoas;
-console.log( 'O seu nome é ' + saida.primeiroNome + ' e vc tem ' + saida.idade +' anos');
+console.log('O seu nome é ' + saida.primeiroNome + ' e vc tem ' + saida.idade +' anos' + '.');
 console.log('Sua escolaridade é, o ' + saida.escolaridade[0] + '.');
 
 
