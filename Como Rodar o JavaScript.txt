@@ -5,7 +5,7 @@ Instalar Node.js: Primeiro, você precisa ter o Node.js instalado no seu computa
 Verificar Instalação do Node.js: Após a instalação, você pode verificar se o Node.js está corretamente instalado abrindo o terminal e digitando:
 
 sh
-Copiar código
+
 node -v
 Isso deve retornar a versão do Node.js instalada.
 
@@ -19,7 +19,7 @@ Crie um novo arquivo JavaScript. Por exemplo, app.js.
 Escrever o Código JavaScript: No seu arquivo app.js, você pode escrever o código JavaScript que deseja executar. Por exemplo:
 
 js
-Copiar código
+
 console.log('Hello, world!');
 Executar o Código JavaScript:
 
@@ -27,7 +27,7 @@ Abra o terminal integrado no VSCode. Você pode fazer isso clicando em Terminal 
 No terminal, navegue até o diretório onde seu arquivo app.js está salvo (se necessário).
 Digite o comando para executar o arquivo JavaScript com o Node.js:
 sh
-Copiar código
+
 node app.js
 Isso deve exibir a saída Hello, world! no terminal.
 Extensões Úteis
