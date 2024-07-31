@@ -1,0 +1,45 @@
+Para rodar JavaScript no Visual Studio Code (VSCode), você pode seguir os seguintes passos:
+
+Instalar Node.js: Primeiro, você precisa ter o Node.js instalado no seu computador. O Node.js permite executar código JavaScript fora do navegador. Você pode baixar e instalar o Node.js a partir do site oficial: Node.js.
+
+Verificar Instalação do Node.js: Após a instalação, você pode verificar se o Node.js está corretamente instalado abrindo o terminal e digitando:
+
+sh
+Copiar código
+node -v
+Isso deve retornar a versão do Node.js instalada.
+
+Instalar o VSCode: Caso ainda não tenha o Visual Studio Code instalado, você pode baixá-lo e instalá-lo a partir do site oficial: Visual Studio Code.
+
+Configurar o Ambiente no VSCode:
+
+Abra o VSCode.
+Crie uma nova pasta para seu projeto ou abra uma pasta existente onde você deseja salvar seus arquivos JavaScript.
+Crie um novo arquivo JavaScript. Por exemplo, app.js.
+Escrever o Código JavaScript: No seu arquivo app.js, você pode escrever o código JavaScript que deseja executar. Por exemplo:
+
+js
+Copiar código
+console.log('Hello, world!');
+Executar o Código JavaScript:
+
+Abra o terminal integrado no VSCode. Você pode fazer isso clicando em Terminal > New Terminal no menu superior ou usando o atalho de teclado (Ctrl + ).
+No terminal, navegue até o diretório onde seu arquivo app.js está salvo (se necessário).
+Digite o comando para executar o arquivo JavaScript com o Node.js:
+sh
+Copiar código
+node app.js
+Isso deve exibir a saída Hello, world! no terminal.
+Extensões Úteis
+Existem algumas extensões que podem melhorar sua experiência ao trabalhar com JavaScript no VSCode:
+
+ESLint: Para linting de código JavaScript.
+Prettier - Code formatter: Para formatação de código.
+Debugger for Chrome: Para depuração de código JavaScript no Chrome.
+Depuração de Código
+Você também pode depurar seu código JavaScript diretamente no VSCode:
+
+Configure o launch.json para Node.js. Vá em Run > Add Configuration... e selecione Node.js.
+Coloque pontos de interrupção (breakpoints) clicando na margem esquerda ao lado do número da linha no seu arquivo de código.
+Inicie a depuração clicando no ícone de "play" na seção de depuração ou usando o atalho (F5).
+Seguindo esses passos, você será capaz de rodar e depurar código JavaScript no Visual Studio Code.

@@ -1,16 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula JavaScript</title>
+    <title>Conceitos Básicos de JavaScript</title>
 </head>
 <body>
-    
+            <h1>Conceitos Básicos de JavaScript</h1>
+            <h2>Variáveis</h2>
+            <p>As variáveis são usadas para armazenar dados que podem ser manipulados e reutilizados. Em JavaScript, podemos declarar variáveis usando <code>var</code>, <code>let</code> e <code>const</code>.</p>
+            <pre><code>var nome = "João";
+        let idade = 25;
+        const cidade = "São Paulo";</code></pre>
 
+            <h2>Tipos de Dados</h2>
+            <p>JavaScript possui vários tipos de dados, incluindo:</p>
+            <ul>
+                <li><strong>String:</strong> Cadeia de caracteres. Ex: "Olá, mundo!"</li>
+                <li><strong>Number:</strong> Números. Ex: 42, 3.14</li>
+                <li><strong>Boolean:</strong> Verdadeiro ou falso. Ex: true, false</li>
+                <li><strong>Null:</strong> Valor nulo. Ex: null</li>
+                <li><strong>Undefined:</strong> Variável não inicializada. Ex: undefined</li>
+                <li><strong>Object:</strong> Estruturas complexas de dados. Ex: {nome: "João", idade: 25}</li>
+                <li><strong>Array:</strong> Lista de valores. Ex: [1, 2, 3, 4, 5]</li>
+            </ul>
 
-<script src="script.js" defer></script>
+            <h2>Operadores</h2>
+            <p>Alguns operadores em JavaScript:</p>
+            <ul>
+                <li><strong>Aritméticos:</strong> +, -, *, /, %</li>
+                <li><strong>Comparação:</strong> ==, ===, !=, !==, >, <, >=, <=</li>
+                <li><strong>Lógicos:</strong> &&, ||, !</li>
+            </ul>
 
-</body>
+            <h2>Estruturas de Controle</h2>
+            <h3>Condicionais</h3>
+            <pre><code>let hora = 10;
+
+        if (hora < 12) {
+            console.log("Bom dia!");
+        } else if (hora < 18) {
+            console.log("Boa tarde!");
+        } else {
+            console.log("Boa noite!");
+        }</code></pre>
+
+            <h3>Laços</h3>
+            <pre><code>for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }</code></pre>
+
+            <h2>Funções</h2>
+            <h3>Definindo Funções</h3>
+            <pre><code>function saudacao(nome) {
+            return "Olá, " + nome + "!";
+        }
+
+        console.log(saudacao("Maria"));</code></pre>
+
+            <h3>Parâmetros e Argumentos</h3>
+            <pre><code>function soma(a, b) {
+            return a + b;
+        }
+
+        console.log(soma(5, 3));</code></pre>
+
+            <h3>Funções Anônimas e Arrow Functions</h3>
+            <pre><code>let saudacao = function(nome) {
+            return "Olá, " + nome + "!";
+        };
+
+        let saudacaoArrow = (nome) => "Olá, " + nome + "!";
+
+        console.log(saudacao("José"));
+        console.log(saudacaoArrow("Ana"));</code></pre>
+
+            <h2>Objetos e Arrays</h2>
+            <h3>Criando e Manipulando Objetos</h3>
+            <pre><code>let pessoa = {
+            nome: "Carlos",
+            idade: 30,
+            cidade: "Rio de Janeiro"
+        };
+
+        console.log(pessoa.nome);
+        pessoa.idade = 31;
+        console.log(pessoa);</code></pre>
+
+            <h3>Arrays e Métodos de Arrays</h3>
+            <pre><code>let numeros = [1, 2, 3, 4, 5];
+
+        console.log(numeros[0]);
+        numeros.push(6);
+        console.log(numeros);
+        numeros.pop();
+        console.log(numeros);</code></pre>
+
+            <h2>Manipulação do DOM</h2>
+            <h3>Selecionando Elementos</h3>
+            <pre><code>let titulo = document.getElementById("titulo");
+        let paragrafos = document.getElementsByClassName("paragrafo");
+        let items = document.querySelectorAll(".item");</code></pre>
+
+            <h3>Modificando o DOM</h3>
+            <pre><code>titulo.innerText = "Novo Título";
+        paragrafos[0].style.color = "blue";</code></pre>
+
+            <h3>Eventos</h3>
+            <pre><code>titulo.addEventListener("click", function() {
+            alert("Título clicado!");
+        });</code></pre>
+
+            <h2>Avançado</h2>
+            <h3>Promises e Async/Await</h3>
+            <pre><code>let promessa = new Promise((resolve, reject) => {
+            let sucesso = true;
+            if (sucesso) {
+                resolve("Deu certo!");
+            } else {
+                reject("Deu errado!");
+            }
+        });
+
+        promessa.then((mensagem) => {
+            console.log(mensagem);
+        }).catch((erro) => {
+            console.log(erro);
+
+        async function asyncFunction() {
+            try {
+                let resultado = await promessa;
+                console.log(resultado);
+            } catch (erro) {
+                console.log(erro);
+            }
+        }
+
+        asyncFunction();</code></pre>
+
+            <h3>Manipulação de APIs</h3>
+            <pre><code>fetch('https://api.exemplo.com/dados')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Erro:', error));</code></pre>
+
+            <h3>Módulos em JavaScript</h3>
+            <pre><code>// arquivo1.js
+        export const nome = "João";
+        export function saudacao() {
+            return "Olá, " + nome + "!";
+        }
+
+        // arquivo2.js
+        import { nome, saudacao } from './arquivo1.js';
+        console.log(saudacao());</code></pre>
+
+        <script src="script.js" defer></script>
+    </body>
 </html>
+
