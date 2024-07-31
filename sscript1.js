@@ -38,3 +38,12 @@ function soma(a, b) {
         }
 
         console.log(soma(5, 3));
+
+
+
+
+    
+    fetch('https://portifoliodomaia.netlify.app/')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Erro:', error));
