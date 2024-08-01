@@ -1,10 +1,10 @@
 
 
 //!ESTA É A ESTRUTURA DE UM OBJETO - SEM PAREMETROS
-/*
+
 const person = {}
 console.log(person);
-*/
+
 
 //!ESTA É A ESTRUTURA DE UM OBJETO - COM PAREMETROS E SUAS PROPRIEDADES
 const pessoas = {
@@ -20,7 +20,7 @@ const pessoas = {
 
 //! VIZUALIZANDO AS INFORMAÇÕES DO OBJETO CRIADO (pessoas)
 //! Note que exitem VARIÁVEIS COM O MESMO NOME
-/*
+
 const primeiroNome = pessoas.primeiroNome;
 const segundoNome = pessoas.segundoNome;
 const ultimoNome = pessoas.ultimoNome;
@@ -29,7 +29,7 @@ const cpf = pessoas.cpf;
 const rg = pessoas.rg;
 const escolaridade = pessoas.escolaridade[0];
 const ativo = pessoas.ativo;
-*/
+
 
 //!PARA A QUANTIDADE DE CÓDIGO ACIMA FAÇA ou seja um *******************CONSTRUCTOR*******************
 const saida = { primeiroNome, segundoNome, ultimoNome, idade, cpf, rg, escolaridade, ativo } = pessoas;
@@ -38,7 +38,7 @@ console.log('Sua escolaridade é, o ' + saida.escolaridade[0] + '.');
 
 
 //* APENAS PARA SAIR NA CONSOLE
-/*
+
 console.log(primeiroNome); 
 console.log(segundoNome);
 console.log(ultimoNome);
@@ -47,4 +47,15 @@ console.log(cpf);
 console.log(rg);
 console.log(escolaridade);
 console.log(ativo);
-*/
+
+
+//CONDICIONAIS
+let hora = 12;
+
+        if (hora <= 12) {
+            console.log("Bom dia!");
+        } else if (hora < 18) {
+            console.log("Boa tarde!");
+        } else {
+            console.log("Boa noite!");
+        }

@@ -3,12 +3,18 @@
 var nome = "João";
 let idade = 25;
 const cidade = "São Paulo";
+console.log(nome);
+console.log(idade);
+console.log(cidade);
 
 
 //LAÇO FOR
 for (let i = 0; i < 10; i++) {
     console.log(i);
 }
+
+
+
 
 
 //CONDICIONAIS
@@ -27,7 +33,6 @@ let hora = 12;
 function saudacao(nome) {
             return "Olá, " + nome + "!";
         }
-
         console.log(saudacao("Maria"));
 
 
@@ -36,14 +41,8 @@ function saudacao(nome) {
 function soma(a, b) {
             return a + b;
         }
-
         console.log(soma(5, 3));
 
 
 
 
-    
-    fetch('https://portifoliodomaia.netlify.app/')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Erro:', error));

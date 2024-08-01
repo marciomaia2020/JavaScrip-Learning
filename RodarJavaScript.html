@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia para Rodar JavaScript no VSCode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guia para Rodar JavaScript no Visual Studio Code (VSCode)</h1>
+
+    <h2>1. Instalar Node.js</h2>
+    <p>Primeiro, você precisa ter o Node.js instalado no seu computador. O Node.js permite executar código JavaScript fora do navegador. Você pode baixar e instalar o Node.js a partir do <a href="https://nodejs.org/">site oficial</a>.</p>
+
+    <h2>2. Verificar Instalação do Node.js</h2>
+    <p>Após a instalação, você pode verificar se o Node.js está corretamente instalado abrindo o terminal e digitando:</p>
+    <pre><code>node -v</code></pre>
+    <p>Isso deve retornar a versão do Node.js instalada.</p>
+
+    <h2>3. Instalar o VSCode</h2>
+    <p>Caso ainda não tenha o Visual Studio Code instalado, você pode baixá-lo e instalá-lo a partir do <a href="https://code.visualstudio.com/">site oficial</a>.</p>
+
+    <h2>4. Configurar o Ambiente no VSCode</h2>
+    <ol>
+        <li>Abra o VSCode.</li>
+        <li>Crie uma nova pasta para seu projeto ou abra uma pasta existente onde você deseja salvar seus arquivos JavaScript.</li>
+        <li>Crie um novo arquivo JavaScript. Por exemplo, <code>app.js</code>.</li>
+    </ol>
+
+    <h2>5. Escrever o Código JavaScript</h2>
+    <p>No seu arquivo <code>app.js</code>, você pode escrever o código JavaScript que deseja executar. Por exemplo:</p>
+    <pre><code>console.log('Hello, world!');</code></pre>
+
+    <h2>6. Executar o Código JavaScript</h2>
+    <ol>
+        <li>Abra o terminal integrado no VSCode. Você pode fazer isso clicando em <code>Terminal &gt; New Terminal</code> no menu superior ou usando o atalho de teclado (<code>Ctrl + `</code>).</li>
+        <li>No terminal, navegue até o diretório onde seu arquivo <code>app.js</code> está salvo (se necessário).</li>
+        <li>Digite o comando para executar o arquivo JavaScript com o Node.js:</li>
+    </ol>
+    <pre><code>node app.js</code></pre>
+    <p>Isso deve exibir a saída <code>Hello, world!</code> no terminal.</p>
+
+    <h2>7. Extensões Úteis</h2>
+    <p>Existem algumas extensões que podem melhorar sua experiência ao trabalhar com JavaScript no VSCode:</p>
+    <ul>
+        <li><strong>Node.js Extensions</strong>: Traz um pacote para usar com o node.</li>
+        <li><strong>ESLint</strong>: Para linting de código JavaScript.</li>
+        <li><strong>Prettier - Code formatter</strong>: Para formatação de código.</li>
+        <li><strong>Debugger for Chrome</strong>: Para depuração de código JavaScript no Chrome.</li>
+    </ul>
+
+    <h2>8. Depuração de Código</h2>
+    <p>Você também pode depurar seu código JavaScript diretamente no VSCode:</p>
+    <ol>
+        <li>Configure o <code>launch.json</code> para Node.js. Vá em <code>Run &gt; Add Configuration...</code> e selecione Node.js.</li>
+        <li>Coloque pontos de interrupção (breakpoints) clicando na margem esquerda ao lado do número da linha no seu arquivo de código.</li>
+        <li>Inicie a depuração clicando no ícone de "play" na seção de depuração ou usando o atalho (<code>F5</code>).</li>
+    </ol>
+    <p>Seguindo esses passos, você será capaz de rodar e depurar código JavaScript no Visual Studio Code.</p>
+</body>
+</html>
